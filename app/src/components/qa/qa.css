@@ -1,0 +1,16 @@
+.resultrow{
+    /* border: 1px solid rgba(145, 143, 143, 0.959); */
+    padding: 1em 1em 1em 1em ;
+    background: rgba(216, 216, 216, 0.726);
+    border-bottom: 0.2em solid rgba(216, 216, 216, 0.726);
+    
+}
+
+.resultrow:hover, .resultrow.active{ 
+    background: rgba(238, 238, 238, 0.726);
+    border-bottom: 0.2em solid #0062FF;
+}
+
+.scrollwindowresultrow{
+    max-height: 16.66em;
+}
