@@ -19,18 +19,25 @@ import "./header.css"
 import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 
 class AppHeader extends Component {
+    constructor(props) {
+        super(props)
+
+        this.appName = "Deep Anomaly Playground"
+        this.appDescription = "An interactive visualization for exploring deep learning models applied to the task of anomaly detectiion."
+
+
+    }
     render() {
         return (
             <div>
-                <Header aria-label="App description">
+                <Header aria-label={this.appDescription}>
                     <SkipToContent />
                     <HeaderName prefix="">
                         {/* <div className="decornone "><NavLink exact to="/"> </NavLink></div> */}
                         <img className="headericon" src="images/icon.png" alt="" />
-                        App Name
-
+                        {this.appName}
                     </HeaderName>
-                    <HeaderNavigation aria-label="App description">
+                    <HeaderNavigation aria-label={this.appDescription}>
                         {/* <HeaderMenuItem element={Link} to="/" className="navbarlink "> Datasets </HeaderMenuItem> */}
                         {/* <HeaderMenuItem  element={Link} to="/models" className="navbarlink "> Models</HeaderMenuItem> */}
                         <div className="navbarlinks  "><NavLink exact to="/"> Action 1 </NavLink></div>
