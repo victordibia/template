@@ -27,7 +27,7 @@ class Scene extends Component {
 
 
     componentDidMount() {
-        this.apptitle = "Amadioha"
+        this.apptitle = "App Name"
     }
 
     submitSearch(e) {
